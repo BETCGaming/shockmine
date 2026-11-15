@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- This is the most appropriate target framework for the game's Unity version. -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <!-- This is the GUID of your mod. -->
+    <AssemblyName>com.github.BETCGaming.ShockMine</AssemblyName>
+    <!-- This is the display name of your mod. -->
+    <AssemblyTitle>ShockMine</AssemblyTitle>
+    <!-- This is the version number of your mod. -->
+    <Version>0.4.1</Version>
+  </PropertyGroup>
+
+  <!-- Assets shipped inside the DLL so the plugin is a single self-contained file -->
+  <ItemGroup>
+    <EmbeddedResource Include="Assets/shock-mine-icon.png" LogicalName="ShockMine.Assets.shock-mine-icon.png" />
+  </ItemGroup>
+
+  <!-- Mod files to copy to the relative BepInEx directory after build -->
+  <ItemGroup>
+    <DeployModFiles Include="$(TargetPath)" BepInExDir="plugins/" />
+  </ItemGroup>
+</Project>
