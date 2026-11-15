@@ -1,6 +1,6 @@
 # ShockMine — a Shock Mine item for Super Battle Golf
 
-Current as of **0.4.1**. This is the design as built; where it once said something different, the
+Current as of **1.0.0**. This is the design as built; where it once said something different, the
 [History](#history) section records what changed and why. `CHANGELOG.md` is the per-release
 record.
 
@@ -323,7 +323,10 @@ presence of a `ShockSeizeWindow` on the mine *is* the "already sprung" check.
 These are the test checklist for a play session. 0.1.1 confirmed the mod loads, registers and
 injects cleanly. The 0.2.0 and 0.3.0 fixes came out of in-game play. The first two-player
 session (against 0.3.0) found the knockout, remote-hold and deploy-lock gaps fixed in 0.4.0.
-Nothing has been played on 0.4.0 yet.
+Two-player play on 0.4.0–0.4.1 confirmed, before the 1.0.0 release: Deploying 1–2 (planting
+halt, no jump/turn), Logic 7 (host and remote knocked down on their own screens), Logic 9
+(shot mine discharges and is spent at once) and Logic 10 (disarm notice). The rest of the list
+has not been formally re-run since 0.3.0.
 
 ### Deploying
 1. Planting stops the player dead: no walking until the mine is in the ground.

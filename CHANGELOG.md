@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.0
+
+First public release on Thunderstore. Gameplay is unchanged from 0.4.1; this marks the Shock
+Mine as complete after two-player testing, and adds the player-facing store page
+(`THUNDERSTORE.md`).
+
+Verified in two-player play: the shock holds and knocks down both the host and remote players
+on their own screens, shot mines discharge visibly, picking up an armed mine disarms it, and
+planting halts the player exactly as a landmine does.
+
+**Testers on 0.4.x:** update. 1.0.0 talks to 0.4.1 the same way, but mixed versions are not
+supported.
+
 ## 0.4.1
 
 **Every player needs 0.4.1**: it adds a network message that 0.4.0 does not know.
